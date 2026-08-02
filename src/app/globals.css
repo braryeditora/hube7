@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Azul-marinho profundo — base institucional */
+  --color-navy-950: #0a1f38;
+  --color-navy-900: #0f2a4a;
+  --color-navy-800: #1a3a5c;
+
+  /* Dourado institucional — detalhe, nunca base */
+  --color-gold-500: #b8963c;
+  --color-gold-400: #cbae5f;
+
+  /* Fundos claros do miolo */
+  --color-cream-50: #faf8f4;
+  --color-cream-100: #f3efe6;
+
+  /* Neutros — texto e apoio */
+  --color-neutral-900: #17191c;
+  --color-neutral-500: #6b7178;
+  --color-white: #ffffff;
+
+  --background: var(--color-cream-50);
+  --foreground: var(--color-neutral-900);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-gold-500: var(--color-gold-500);
+  --color-gold-400: var(--color-gold-400);
+  --color-cream-50: var(--color-cream-50);
+  --color-cream-100: var(--color-cream-100);
+  --color-neutral-900: var(--color-neutral-900);
+  --color-neutral-500: var(--color-neutral-500);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Acessibilidade: respeita quem pediu menos movimento no sistema */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
