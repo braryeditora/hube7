@@ -18,6 +18,7 @@ export const headerCtas = {
 };
 
 export const footerNav: NavItem[] = [
+  { label: "Gratidão", href: "/gratidao" },
   { label: "Contato", href: "/contato" },
   { label: "Política de Privacidade", href: "/privacidade" },
   { label: "Termos", href: "/termos" },

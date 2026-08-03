@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
+import ShareStoryForm from "@/components/forms/ShareStoryForm";
 
 export const metadata: Metadata = {
   title: "Cases | Hub E7",
@@ -83,6 +84,48 @@ export default function CasesPage() {
             >
               Conhecer o próximo evento
             </Link>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-t border-neutral-900/10">
+        <Container>
+          <div className="mx-auto max-w-xl py-20 text-center sm:py-28">
+            <p className="text-base leading-relaxed text-neutral-500">
+              Cada case publicado, com autorização, também é uma vitrine para
+              quem construiu aquele resultado — pessoa ou empresa.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-t border-neutral-900/10">
+        <Container>
+          <div className="mx-auto flex max-w-xl flex-col gap-8 py-20 sm:py-28">
+            <div className="flex flex-col items-center gap-3 text-center">
+              <span className="rounded-full border border-gold-500/40 px-3 py-1 text-xs font-medium uppercase tracking-[0.15em] text-gold-500">
+                Disponível agora
+              </span>
+              <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">
+                Conte o que aconteceu.
+              </h2>
+              <p className="text-base leading-relaxed text-neutral-500">
+                Uma apresentação pode iniciar uma conversa. Uma conversa pode
+                aproximar pessoas. E uma conexão pode contribuir para uma
+                oportunidade real. Ao registrar sua história, você ajuda o
+                Hub E7 a compreender o impacto das relações construídas
+                dentro da comunidade.
+              </p>
+            </div>
+
+            <ShareStoryForm />
+
+            <p className="text-center text-xs text-neutral-500">
+              Este relato nos ajuda a compreender o impacto real do Hub E7.
+              Com as autorizações correspondentes e após a validação das
+              informações, ele também poderá inspirar novas conexões por
+              meio da página de Cases.
+            </p>
           </div>
         </Container>
       </section>
