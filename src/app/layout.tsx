@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import Header from "@/components/navigation/Header";
+import Footer from "@/components/navigation/Footer";
 import "./globals.css";
 
 const heading = Cormorant_Garamond({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${heading.variable} ${body.variable} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
