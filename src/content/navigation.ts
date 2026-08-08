@@ -6,6 +6,7 @@
 export const mainNav: NavItem[] = [
   { label: "Hub E7", href: "/hub-e7" },
   { label: "Eventos", href: "/eventos" },
+  { label: "Acessos", href: "/acessos" },
   { label: "NetWeaving™ | Acesse", href: "/netweaving-acesse" },
   { label: "Cases", href: "/cases" },
   { label: "Comunidade", href: "/comunidade" },
