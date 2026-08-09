@@ -4,13 +4,13 @@ import Container from "@/components/ui/Container";
 import ApplicationForm from "@/components/forms/ApplicationForm";
 
 export const metadata: Metadata = {
-  title: "NetWeaving™ | Direção Empresarial | Hub E7",
+  title: "Diagnóstico Empresarial | Hub E7",
   description:
-    "Uma experiência que une Diagnóstico Empresarial e Método NetWeaving™ para ajudar empresários a compreender prioridades, preparar sua empresa e construir relações coerentes com o momento do negócio.",
+    "Diagnóstico Empresarial e Estruturação de Capital Intelectual: uma leitura estruturada do negócio, conduzida por Orlando Carvalho com a leitura relacional do Método NetWeaving™ de Sheyla Santos, para preparar decisões e relações mais claras.",
   openGraph: {
-    title: "NetWeaving™ | Direção Empresarial | Hub E7",
+    title: "Diagnóstico Empresarial | Hub E7",
     description:
-      "Uma experiência que une Diagnóstico Empresarial e Método NetWeaving™ para ajudar empresários a compreender prioridades, preparar sua empresa e construir relações coerentes com o momento do negócio.",
+      "Diagnóstico Empresarial e Estruturação de Capital Intelectual: uma leitura estruturada do negócio, conduzida por Orlando Carvalho com a leitura relacional do Método NetWeaving™ de Sheyla Santos, para preparar decisões e relações mais claras.",
     type: "website",
   },
 };
@@ -80,26 +80,15 @@ const notFitFor = [
   "Solução completa sem participação pessoal",
 ];
 
-const formatItems = [
-  {
-    title: "12 encontros em grupo",
-    description: "Encontros ao vivo, realizados por vídeo pelo Google Meet.",
-  },
-  {
-    title: "Acesso às gravações",
-    description:
-      "Os encontros serão gravados para os participantes que não puderem acompanhar alguma reunião ao vivo.",
-  },
-  {
-    title: "Grupo seleto no WhatsApp",
-    description:
-      "Ambiente de comunicação e apoio destinado exclusivamente aos empresários selecionados.",
-  },
-  {
-    title: "Primeira edição com 10 participantes",
-    description:
-      "A limitação de vagas preserva a proximidade, a qualidade das leituras e a participação direta dos condutores.",
-  },
+const layers = [
+  "Oferta",
+  "Comercial",
+  "Operações",
+  "Governança",
+  "Capital intelectual",
+  "Posicionamento",
+  "Relações",
+  "Arquitetura do negócio",
 ];
 
 const deliverables = [
@@ -110,9 +99,6 @@ const deliverables = [
   "Análise da clareza da oferta e da apresentação empresarial",
   "Definição dos tipos de conexão coerentes com o momento do negócio",
   "Direcionamento inicial de próximos passos",
-  "Participação nos 12 encontros em grupo",
-  "Acesso às gravações",
-  "Participação no grupo seleto de WhatsApp",
 ];
 
 const conductors = [
@@ -124,7 +110,7 @@ const conductors = [
       alt: "Sheyla Santos, fundadora do Hub E7 e condutora do Método NetWeaving™",
     },
     description:
-      "Autora e condutora do Método NetWeaving™, Sheyla Santos atua na construção de aproximações, na leitura relacional e na criação de ambientes de confiança, colaboração e continuidade. Sua dimensão no programa trabalha serviço antes do pedido, clareza de intenção, postura relacional e ativação responsável do capital relacional.",
+      "Autora e condutora do Método NetWeaving™, Sheyla Santos atua na construção de aproximações, na leitura relacional e na criação de ambientes de confiança, colaboração e continuidade. Sua dimensão nesta intervenção trabalha serviço antes do pedido, clareza de intenção, postura relacional e ativação responsável do capital relacional.",
   },
   {
     name: "Orlando Carvalho",
@@ -134,7 +120,7 @@ const conductors = [
       alt: "Orlando Carvalho, consultor em estruturação organizacional, responsável pela dimensão de Diagnóstico Empresarial",
     },
     description:
-      "Orlando Carvalho atua com diagnóstico empresarial, processos, organização de prioridades, capital intelectual e direcionamento estratégico. Sua dimensão no programa trabalha a leitura do estágio atual da empresa, a identificação de gargalos, a clareza da oferta e a preparação do negócio para seus próximos movimentos.",
+      "Orlando Carvalho atua com diagnóstico empresarial, processos, organização de prioridades, capital intelectual e direcionamento estratégico. Sua metodologia lê o estágio atual da empresa, identifica gargalos, avalia a clareza da oferta e documenta o direcionamento para os próximos movimentos do negócio — a leitura de cada empresa é conduzida e registrada individualmente, sem modelos padronizados.",
   },
 ];
 
@@ -145,30 +131,31 @@ export default function NetWeavingAcessePage() {
       <Container>
         <section className="mx-auto flex max-w-2xl flex-col items-center gap-6 py-24 text-center sm:py-32">
           <p className={eyebrowClassName}>
-            Método NetWeaving™ + Diagnóstico Empresarial
+            Diagnóstico Empresarial + Método NetWeaving™
           </p>
           <div className="flex flex-col items-center gap-1">
             <span className="font-serif text-2xl text-neutral-900 sm:text-3xl">
-              NetWeaving™
+              Diagnóstico Empresarial
             </span>
             <span className="text-xs font-medium uppercase tracking-[0.2em] text-gold-500">
-              Direção Empresarial
+              Estruturação de Capital Intelectual
             </span>
           </div>
           <h1 className="font-serif text-4xl text-neutral-900 sm:text-5xl">
-            Prepare sua empresa para as conexões que deseja construir.
+            Antes de ampliar oportunidades, compreenda o que precisa ser
+            estruturado.
           </h1>
           <p className="max-w-md text-base leading-relaxed text-neutral-500">
-            Uma experiência de três meses que une Diagnóstico Empresarial e
+            Uma frente consultiva de alta profundidade, conduzida por Orlando
+            Carvalho e Sheyla Santos, que une Diagnóstico Empresarial e
             Método NetWeaving™ para ajudar empresários a compreender seu
-            momento, organizar prioridades e construir relações coerentes
-            com os próximos passos do negócio.
+            momento e organizar prioridades antes de ampliar relações.
           </p>
           <a href="#aplicacao" className={ctaClassName}>
-            Quero participar da seleção
+            Iniciar uma conversa
           </a>
           <p className="text-xs text-neutral-500">
-            Dez empresários serão selecionados para a primeira edição.
+            Acesso mediante aplicação e conversa de alinhamento.
           </p>
         </section>
       </Container>
@@ -291,7 +278,7 @@ export default function NetWeavingAcessePage() {
               </div>
               <div className="flex flex-col gap-4">
                 <h3 className="font-serif text-base text-neutral-500">
-                  Esta experiência não foi criada para quem procura atalhos.
+                  Esta intervenção não foi criada para quem procura atalhos.
                 </h3>
                 <ul className="flex flex-col gap-2 text-base text-neutral-500">
                   {notFitFor.map((item) => (
@@ -304,52 +291,49 @@ export default function NetWeavingAcessePage() {
         </Container>
       </section>
 
-      {/* Seção 7 — O formato confirmado */}
+      {/* Seção 7 — Camadas possíveis de intervenção */}
       <section className="border-t border-neutral-900/10">
         <Container>
           <div className="mx-auto flex max-w-3xl flex-col gap-10 py-20 sm:py-28">
             <div className="mx-auto flex max-w-xl flex-col gap-3 text-center">
-              <p className={eyebrowClassName}>A experiência</p>
+              <p className={eyebrowClassName}>Escopo do diagnóstico</p>
               <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">
-                Três meses de leitura, preparação e direcionamento.
+                Camadas possíveis de intervenção.
               </h2>
               <p className="text-base leading-relaxed text-neutral-500">
-                A primeira edição será conduzida ao longo de três meses,
-                com participação direta de Sheyla Santos e Orlando
-                Carvalho.
+                O diagnóstico pode alcançar diferentes camadas do negócio,
+                dependendo do que a leitura inicial identificar. Nem toda
+                empresa passa por todas elas — é a leitura que determina o
+                que faz sentido estruturar em cada caso.
               </p>
             </div>
-
-            <div className="grid gap-8 sm:grid-cols-2">
-              {formatItems.map((item) => (
-                <div key={item.title} className="flex flex-col gap-2 text-center sm:text-left">
-                  <h3 className="font-serif text-base text-neutral-900">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-neutral-500">
-                    {item.description}
-                  </p>
-                </div>
+            <ul className="mx-auto grid max-w-2xl gap-3 text-center text-sm text-neutral-900 sm:grid-cols-2 lg:grid-cols-4">
+              {layers.map((layer) => (
+                <li
+                  key={layer}
+                  className="rounded-md border border-neutral-900/10 px-4 py-3"
+                >
+                  {layer}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </Container>
       </section>
 
-      {/* Seção 8 — O que o participante recebe */}
+      {/* Seção 8 — O que uma leitura estruturada pode revelar */}
       <section className="border-t border-neutral-900/10">
         <Container>
           <div className="mx-auto flex max-w-2xl flex-col gap-8 py-20 sm:py-28">
             <div className="flex flex-col gap-3 text-center">
-              <p className={eyebrowClassName}>Entregas</p>
+              <p className={eyebrowClassName}>O que a leitura pode revelar</p>
               <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">
                 Uma leitura integrada do negócio e das relações.
               </h2>
               <p className="text-base leading-relaxed text-neutral-500">
-                Ao longo da experiência, cada participante será orientado a
-                compreender melhor seu cenário empresarial, suas
-                prioridades e a forma como se apresenta e constrói
-                relações.
+                A leitura inicial ajuda cada empresário a compreender melhor
+                seu cenário empresarial, suas prioridades e a forma como se
+                apresenta e constrói relações.
               </p>
             </div>
             <ul className="mx-auto grid max-w-xl gap-2 text-base text-neutral-900 sm:grid-cols-2">
@@ -365,6 +349,12 @@ export default function NetWeavingAcessePage() {
       <section className="border-t border-neutral-900/10">
         <Container>
           <div className="mx-auto flex max-w-5xl flex-col gap-12 py-20 sm:py-28">
+            <div className="mx-auto flex max-w-xl flex-col gap-3 text-center">
+              <p className={eyebrowClassName}>Capacidade de estruturação</p>
+              <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">
+                Quem conduz
+              </h2>
+            </div>
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-8">
               {conductors.map((conductor) => (
                 <div key={conductor.name} className="flex flex-col gap-4">
@@ -392,50 +382,40 @@ export default function NetWeavingAcessePage() {
               ))}
             </div>
             <p className="mx-auto max-w-xl text-center font-serif text-lg italic text-neutral-900">
-              Sheyla conduz o Método NetWeaving™. Orlando conduz a dimensão
-              empresarial. Juntos, integram a leitura da empresa à leitura
-              das relações.
+              Sheyla conduz o Método NetWeaving™. Orlando conduz o
+              Diagnóstico Empresarial. Juntos, integram a leitura da empresa
+              à leitura das relações.
             </p>
           </div>
         </Container>
       </section>
 
-      {/* Seção 10 — Primeira edição */}
+      {/* Seção 10 — Como funciona o processo */}
       <section className="border-t border-neutral-900/10">
         <Container>
           <div className="mx-auto flex max-w-xl flex-col items-center gap-6 py-20 text-center sm:py-28">
-            <p className={eyebrowClassName}>Condição de lançamento</p>
+            <p className={eyebrowClassName}>Como funciona</p>
             <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">
-              Uma primeira edição com participação direta dos condutores.
+              Aplicação, leitura e, quando houver aderência, proposta
+              personalizada.
             </h2>
             <p className="text-base leading-relaxed text-neutral-500">
-              O valor de referência do NetWeaving™ | Direção Empresarial é
-              de R$ 7.000. Para a primeira edição, dez empresários serão
-              selecionados para participar pelo valor de R$ 3.500. Essa
-              condição foi definida para a etapa inicial de integração
-              entre o Diagnóstico Empresarial e o Método NetWeaving™,
-              permitindo acompanhar de perto os participantes, calibrar a
-              experiência e documentar os primeiros casos com autorização.
-            </p>
-            <p className="font-serif text-2xl text-navy-900">
-              Primeira edição — R$ 3.500
-            </p>
-            <p className="text-xs text-neutral-500">
-              Parcelamento disponível no momento da contratação, sujeito às
-              condições da plataforma de pagamento.
+              O acesso a esta intervenção começa por uma aplicação e uma
+              conversa inicial. A partir dessa conversa e de uma leitura
+              preliminar do momento da empresa, é possível identificar se
+              há aderência entre a demanda e a capacidade de estruturação
+              do Hub E7. Quando há aderência, uma proposta é construída de
+              forma personalizada, de acordo com o escopo e a profundidade
+              que o diagnóstico apontar como necessários.
             </p>
             <a href="#aplicacao" className={ctaClassName}>
-              Quero participar da seleção
+              Iniciar uma conversa
             </a>
-            <p className="text-xs text-neutral-500">
-              O pagamento somente será disponibilizado após a aplicação e a
-              conversa de alinhamento.
-            </p>
           </div>
         </Container>
       </section>
 
-      {/* Seção 11 — O que o programa não garante */}
+      {/* Seção 11 — O que a intervenção não garante */}
       <section className="border-t border-neutral-900/10">
         <Container>
           <div className="mx-auto flex max-w-2xl flex-col gap-4 py-20 text-center sm:py-28">
@@ -444,18 +424,17 @@ export default function NetWeavingAcessePage() {
               Direção e preparação não são promessa de resultado.
             </h2>
             <p className="text-base leading-relaxed text-neutral-500">
-              O NetWeaving™ | Direção Empresarial trabalha diagnóstico,
-              preparação, direcionamento e construção relacional. O
-              programa não comercializa contatos, não garante apresentações
-              específicas e não promete negócios, vendas, investimentos,
-              contratações, indicações, parcerias ou resultados
-              financeiros. As possibilidades identificadas dependem do
-              momento da empresa, da qualidade da oferta, da aderência
-              entre as partes, das decisões dos envolvidos e da capacidade
-              de execução do participante. O diagnóstico identifica,
-              organiza, prioriza e recomenda. Ele não corresponde a uma
-              consultoria integral de implementação ou reestruturação
-              empresarial.
+              O Diagnóstico Empresarial trabalha leitura, preparação,
+              direcionamento e construção relacional. Esta intervenção não
+              comercializa contatos, não garante apresentações específicas
+              e não promete negócios, vendas, investimentos, contratações,
+              indicações, parcerias ou resultados financeiros. As
+              possibilidades identificadas dependem do momento da empresa,
+              da qualidade da oferta, da aderência entre as partes, das
+              decisões dos envolvidos e da capacidade de execução do
+              empresário. O diagnóstico identifica, organiza, prioriza e
+              recomenda. Ele não corresponde a uma consultoria integral de
+              implementação ou reestruturação empresarial.
             </p>
           </div>
         </Container>
@@ -466,20 +445,16 @@ export default function NetWeavingAcessePage() {
         <Container>
           <div className="mx-auto flex max-w-xl flex-col gap-8 py-20 sm:py-28">
             <div className="flex flex-col gap-3 text-center">
-              <p className={eyebrowClassName}>Processo seletivo</p>
+              <p className={eyebrowClassName}>Próximo passo</p>
               <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">
-                O acesso começa por uma conversa de alinhamento.
+                O acesso começa por uma conversa.
               </h2>
               <p className="text-base leading-relaxed text-neutral-500">
-                A primeira edição será formada por dez empresários. O
-                preenchimento da aplicação não garante a participação. As
-                respostas serão analisadas para compreender o momento da
-                empresa, a aderência à proposta e a disponibilidade do
-                candidato para executar os direcionamentos recebidos. Após
-                a triagem, os candidatos com maior aderência serão
-                convidados para uma conversa com a equipe responsável. O
-                acesso ao pagamento será encaminhado somente depois da
-                aprovação.
+                Não é uma análise burocrática de aplicação — é o início de
+                um relacionamento. Preencha os dados abaixo para combinar
+                uma conversa inicial com Orlando Carvalho. A qualificação
+                mais profunda sobre o momento da sua empresa acontece
+                nessa conversa, não no formulário.
               </p>
             </div>
 
@@ -492,7 +467,7 @@ export default function NetWeavingAcessePage() {
       <section className="border-t border-neutral-900/10">
         <Container>
           <div className="mx-auto flex max-w-xl flex-col items-center gap-6 py-20 text-center sm:py-28">
-            <p className={eyebrowClassName}>NetWeaving™ | Direção Empresarial</p>
+            <p className={eyebrowClassName}>Diagnóstico Empresarial</p>
             <h2 className="font-serif text-2xl text-neutral-900 sm:text-3xl">
               Antes de ampliar o acesso, prepare a empresa.
             </h2>
@@ -502,11 +477,8 @@ export default function NetWeavingAcessePage() {
               momento.
             </p>
             <a href="#aplicacao" className={ctaClassName}>
-              Quero participar da seleção
+              Iniciar uma conversa
             </a>
-            <p className="text-xs text-neutral-500">
-              Dez vagas na primeira edição.
-            </p>
           </div>
         </Container>
       </section>
